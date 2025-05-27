@@ -2,7 +2,7 @@
 title: "Barcodes"
 author: "Kenneth Matreyek"
 date: "`r Sys.Date()`"
-output: html_document
+output: github_document
 ---
 
 As part of the AVE-ETS, we had been discussing barcoded variant libraries. I don't quite remember the context, but I think I suggested we look at some real sequencing data of a barcoded variant library, and I offered to dig up the PTEN VAMP-Seq library data. Of course, I had other things to do in the month following this statement so I didn't look for those files until the long weekend immediately prior to the next meeting. My original plan was to just find this blog post [https://www.matreyeklab.com/simulating-sampling-during-recombination/1175/] and say we use that, but then I realized that those data tables were for variant frequencies, and not barcode counts. All of my old data from my postdoc was on flash drives in the office at work, but I didn't feel like making the commute in just to for that. I decided to try to find and re-process the raw data uploaded to GEO / SRA.
@@ -91,3 +91,5 @@ write.table(file = "Output/Second_df.tsv", second_df, quote = F, row.names = F)
 
 ```
 
+For anyone that wants to test this, the github repo for the above scripts and data can be found here:
+https://github.com/MatreyekLab/Barcodes
